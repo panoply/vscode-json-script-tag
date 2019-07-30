@@ -6,7 +6,7 @@ Syntax highlighting support for HTML `<script>` tags using `application/json` an
 
 ## Why?
 
-VS Code [does not yet support](https://github.com/microsoft/vscode/issues/36280) JSON syntax highlighting on HTML script tags using the `type="application/json"` attribute.
+VS Code [does not yet support](https://github.com/microsoft/vscode/issues/36280) JSON syntax highlighting on HTML script tags using the `type="application/json"` attribute. If and/or until VS Code does support syntax highlighting of json script tags you can use this as a drop in replacement.
 
 ## Example
 
