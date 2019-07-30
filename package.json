@@ -1,0 +1,41 @@
+{
+  "name": "json-script-tag",
+  "displayName": "JSON Script Tag (HTML)",
+  "description": "JSON Syntax highlighting support for html script tags using application/json and application/ld+json attributes.",
+  "publisher": "sissel",
+  "icon": "images/logo.png",
+  "author": "Nikolas Savvidis <nicos@gmx.com>",
+  "version": "0.1.0",
+  "keywords": [
+    "html",
+    "script json tag",
+    "json tag",
+    "json tag html"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/panoply/vscode-json-script-tag.git"
+  },
+  "bugs": {
+    "url": "https://github.com/panoply/vscode-json-script-tag/issues"
+  },
+  "engines": {
+    "vscode": "^1.30.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Other"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+        "scopeName": "script-json.injection",
+        "path": "./syntax/script-json.injection.json",
+        "injectTo": ["text.html"],
+        "embeddedLanguages": {
+          "source.json": "json"
+        }
+      }
+    ]
+  }
+}
