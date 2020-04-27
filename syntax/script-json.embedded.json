@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
   "name": "JSON Script Tag",
   "scopeName": "source.json.embedded",
-  "injectionSelector": "L:text.html -meta.embedded.block",
+  "injectionSelector": "L:text.html",
   "patterns": [
     {
       "include": "#script-json-tag"
