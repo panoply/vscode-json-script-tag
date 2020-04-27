@@ -1,6 +1,6 @@
 [![Install](https://img.shields.io/badge/vscode-install-blue.svg)](https://marketplace.visualstudio.com/items?itemName=sissel.json-script-tag)
 
-# JSON `<script>` Tag Syntax Support (VS Code)
+# JSON within HTML Script (Syntax Support)
 
 Syntax highlighting support for HTML `<script></script>` tags using `application/json` and `application/ld+json` attributes.
 
