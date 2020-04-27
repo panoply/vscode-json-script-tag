@@ -1,17 +1,16 @@
 {
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
   "name": "JSON Script Tag",
-  "scopeName": "script-json.injection",
-  "injectionSelector": "L:text.html",
+  "scopeName": "source.json.embedded",
+  "injectionSelector": "L:text.html -meta.embedded.block",
   "patterns": [
     {
       "include": "#script-json-tag"
     }
   ],
   "repository": {
-
     "script-json-tag": {
-      "contentName": "source.json",
-      "name": "meta.embedded.block.html",
+      "contentName": "meta.embedded.block.json.html",
       "begin": "(<)(script)\\b(?=[^>]*type=('application/(ld\\+)?json'|\"application/(ld\\+)?json\"))(?![^/>]*/>\\s*$)",
       "beginCaptures": {
         "1": {
@@ -48,11 +47,19 @@
     "source-json": {
       "begin": "(>)",
       "beginCaptures": {
+        "0": {
+          "name": "meta.tag.metadata.json.start.html"
+        },
         "1": {
           "name": "punctuation.definition.tag.end.html"
         }
       },
       "end": "(?=</script>)",
+      "endCaptures": {
+        "0": {
+          "name": "meta.tag.metadata.json.end.html"
+        }
+      },
       "patterns": [
         {
           "include": "source.json"
@@ -64,7 +71,7 @@
       "match": "\\b([a-zA-Z\\-:_]+)"
     },
     "attribute-value": {
-      "name": "string.quoted.double.html, string.quoted.single.html",
+      "name": "string.quoted.double.html",
       "match": "(\"|').*?(\"|')"
     }
   }

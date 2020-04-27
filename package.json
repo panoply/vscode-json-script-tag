@@ -5,7 +5,7 @@
   "publisher": "sissel",
   "icon": "images/logo.png",
   "author": "Nikolas Savvidis <nicos@gmx.com>",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "keywords": [
     "html",
     "script json tag",
@@ -29,11 +29,11 @@
   "contributes": {
     "grammars": [
       {
-        "scopeName": "script-json.injection",
-        "path": "./syntax/script-json.injection.json",
+        "scopeName": "source.json.embedded",
+        "path": "./syntax/script-json.embedded.json",
         "injectTo": ["text.html"],
         "embeddedLanguages": {
-          "source.json": "json"
+          "meta.embedded.block.json.html": "json"
         }
       }
     ]
