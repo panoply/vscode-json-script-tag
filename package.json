@@ -1,6 +1,6 @@
 {
   "name": "json-script-tag",
-  "displayName": "JSON Script Tag (HTML)",
+  "displayName": "JSON Script Tag",
   "description": "JSON Syntax highlighting support for html script tags using application/json and application/ld+json attributes.",
   "publisher": "sissel",
   "icon": "images/logo.png",
